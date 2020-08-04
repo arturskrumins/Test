@@ -1,0 +1,46 @@
+<!-- <p>profile-reactive works!</p>
+
+<app-laikapoga (klikinaats)="person.get('name').setValue('')" [vaards]="person.value.name"></app-laikapoga>
+
+<form [formGroup]="person">
+
+    <app-ievade label="Vārds" type="text" [control]="person.get('name')"></app-ievade>
+    <app-ievade label="Uzvards" type="text" [control]="person.get('surname')"></app-ievade>
+    <app-ievade label="Epasts" type="email" [control]="person.get('email')"></app-ievade>
+
+    <button type="submit"
+            [disabled]="person.invalid"
+            class="btn btn-block btn-primary"
+            (click)="submitForm()">ir?</button>
+</form> -->
+<!-- <pre>{{person.value|json}}</pre> -->
+<app-hero-detail></app-hero-detail>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+<script type="text/javascript">
+
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer", {
+      title:{
+        text: "My First Chart in CanvasJS"
+      },
+      data: [
+      {
+        // Change type to "doughnut", "line", "splineArea", etc.
+        type: "column",
+        dataPoints: [
+          { label: "apple",  y: 10  },
+          { label: "orange", y: 15  },
+          { label: "banana", y: 25  },
+          { label: "mango",  y: 30  },
+          { label: "grape",  y: 28  }
+        ]
+      }
+      ]
+    });
+    chart.render();
+  }
+  </script>
+
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>

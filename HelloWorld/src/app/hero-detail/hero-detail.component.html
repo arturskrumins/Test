@@ -1,0 +1,30 @@
+<!-- <p>hero-detail works!</p> -->
+
+<h1>Sveiks, {{person.name}}!</h1>
+
+<form>
+    <div class="form-group">
+        <label>Vārds</label>
+        <input type="text"
+                name="name"
+                [(ngModel)]="person.name"
+                class="form-control"
+                placeholder="Enter your name">
+    </div>
+    <div class="alert alert-danger" *ngIf="person.name=='Arturs'">Arturs nedriikst rakstit kodus</div>
+
+    <div class="form-group">
+        <label>Epasts</label>
+        <input type="email"
+                name="email"
+                [(ngModel)]="person.email"
+                class="form-control"
+                placeholder="Enter your email">
+    </div>
+
+    <button type="submit"
+            class="btn btn-block btn-primary"
+            (click)="submitForm()">Iesniegt</button>
+</form>
+<!--
+<pre>{{person|json}}</pre> -->

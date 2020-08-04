@@ -1,0 +1,18 @@
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  background-color: white;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+.column1 {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+.p {
+  text-align: center;
+}
